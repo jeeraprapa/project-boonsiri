@@ -127,7 +127,7 @@ form .form-check-input {
     min-width: 120px;
 }
 
-#schedule table.table,#search .calculate table.table,#transfer .calculate table.table{
+#schedule table.table,.calculate table.table{
     border: #dee2e6 solid 1px;
 }
 #schedule table.table td{
@@ -196,22 +196,18 @@ span.color-gray{
     }
 }
 
-#search .calculate table.table thead th,#search .calculate table.table td,
-#transfer .calculate table.table thead th,#transfer .calculate table.table td{
+.calculate table.table thead th,#search .calculate table.table td{
     border: 0;
 }
-#transfer .calculate table.table .danger,
-#search .calculate table.table .danger{
+.calculate table.table .danger{
     background: #ff3407;
     color: #fff;
 }
-#transfer .calculate table.table .gray,
-#search .calculate table.table .gray{
+.calculate table.table .gray{
     background: #a29d9d;
     color: #fff;
 }
-#transfer .calculate table.table .gray .h3,
-#search .calculate table.table .gray .h3{
+.calculate table.table .gray .h3{
     color: #fff;
 }
 
@@ -365,5 +361,148 @@ ul.list-circle li:before {
 @media (max-width: 575.98px){
     .table-responsive-sm {
         border: solid 1px #ccc;
+    }
+}
+
+#passenger .group-detail .container,#preview .group-detail .container{
+    padding: 3rem 2.5rem;
+}
+#passenger .group-detail .container p,#preview .group-detail .container p{
+    font-size: 1.25rem;
+    color: rgb(81, 83, 101);;
+}
+#passenger .group-detail header,#preview .group-detail header{
+    position: relative;
+}
+#passenger .group-detail header:before,#preview .group-detail header:before{
+    display: block;
+    content: '';
+    border-bottom: solid 1px red;
+    bottom: -1.5rem;
+    position: absolute;
+    width: 20%;
+    z-index: 9;
+}
+#passenger .group-detail header:after,#preview .group-detail header:after{
+    display: block;
+    content: '';
+    border-bottom: solid 1px;
+    bottom: -1.5rem;
+    position: absolute;
+    width: 100%;
+}
+#passenger .group-detail .form-border-group{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    margin: .5rem;
+    position: relative;
+}
+.icon-input {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    right: 0;
+    top: 50%;
+    color: #ccc;
+}
+#passenger .group-detail .form-border-group input,#passenger .group-detail .form-border-group select{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+#passenger .group-detail .form-border-group .form-control:focus{
+    box-shadow: none;
+}
+#passenger .group-detail .form-border-group .form-group{
+    margin: 0;
+}
+#passenger .group-detail .form-border-group label{
+    font-size: 0.75rem;
+}
+
+#passenger .group-detail .container .credit_card p{
+    font-size: 0.812rem;
+}
+#group-payment .credit_card {
+    display: inline-block;
+    position: relative;
+}
+.credit_card img {
+    height: 75px;
+    width: auto;
+}
+#group-payment .credit_card img{
+    border: solid 1px #ccc;
+    border-radius: 5px;
+}
+#group-payment .credit_card.active img{
+    border: solid 1px #67aa2e;
+    border-radius: 5px;
+}
+#group-payment .credit_card.active:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: .5rem;
+    height: .5rem;
+    background: #67aa2e;
+    top: 6px;
+    right: 4px;
+    border-radius: 50%;
+}
+
+#form-paypal,#form-credit,#form-bank{
+    display: none;
+}
+#form-paypal.active,#form-credit.active,#form-bank.active{
+    display: flex;
+}
+
+#loading .group-img-loading,#loading .information{
+    margin: 1rem auto;
+}
+#loading .group-img-loading img{
+    height: 50px;
+}
+@media (max-width: 768px){
+    #loading .group-img-loading img{
+        height: 28px;
+    }
+    #preview .w-50{
+        width: 100% !important;
+    }
+}
+#success .booking-thank{
+    position: relative;
+}
+#success .booking-date{
+    position: absolute;
+    top:0;
+    right: 3rem;
+    color: #515365;
+    text-align: right;
+    font-size: 1.2rem;
+}
+@media (max-width: 425px){
+    #success .booking-date{
+        right: 2rem;
+        font-size: .812rem;
+    }
+    #success .booking-date p{
+        font-size: .812rem;
+    }
+}
+
+.notification .note-payment{
+    background: red;
+    color: white;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+@media (max-width: 425px){
+    .notification{
+        padding: 1rem;
     }
 }

@@ -22,3 +22,19 @@ Route::get('/booking-route', function () {
 Route::get('/booking-transfer', function () {
     return view('booking/transfer/index');
 })->name('http::booking-transfer');
+
+Route::get('/passenger-info', function () {
+    return view('booking/passenger/index');
+})->name('http::passenger-info');
+
+Route::get('/preview-payment', function () {
+    return view('booking/preview/index');
+})->name('http::preview-payment');
+
+Route::get('/payment-loading', function () {
+    return view('booking/payment/loading');
+})->name('http::payment-loading');
+
+Route::get('/payment-success', function () {
+    return view('booking/payment/success');
+})->name('http::payment-success');
