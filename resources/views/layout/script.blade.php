@@ -15,10 +15,5 @@
 <script src="{{asset('js/base-init.js')}}"></script>
 <script defer src="{{asset('fonts/fontawesome-all.js')}}"></script>
 
-<script src="{{asset('vendors/bootstrap/dist/js/bootstrap.bundle.js')}}"></script><?php
-/**
- * Created by PhpStorm.
- * User: PinkCLS
- * Date: 9/22/2018
- * Time: 8:16 PM
- */
+<script src="{{asset('vendors/bootstrap/dist/js/bootstrap.bundle.js')}}"></script>
+@yield('script')

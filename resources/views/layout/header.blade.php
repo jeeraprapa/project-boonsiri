@@ -29,7 +29,7 @@
                                 </a>
                                 <div class="dropdown-menu megamenu">
                                     <div class="row">
-                                        <div class="col col-sm-3">
+                                        <div class="col col-sm-12 col-lg-3">
                                             <div class="tour-pin-wrapper">
                                                 <div class="tour-pin-image">
                                                     <a href="/tour/24">
@@ -45,7 +45,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col col-sm-3">
+                                        <div class="col col-sm-12 col-lg-3">
                                             <div class="tour-pin-wrapper">
                                                 <div class="tour-pin-image">
                                                     <a href="/tour/24">
@@ -61,7 +61,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col col-sm-3">
+                                        <div class="col col-sm-12 col-lg-3">
                                             <div class="tour-pin-wrapper">
                                                 <div class="tour-pin-image">
                                                     <a href="/tour/24">
@@ -77,7 +77,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col col-sm-3">
+                                        <div class="col col-sm-12 col-lg-3">
                                             <div class="tour-pin-wrapper">
                                                 <div class="tour-pin-image">
                                                     <a href="/tour/24">
