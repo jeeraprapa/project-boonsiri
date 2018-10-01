@@ -35,6 +35,39 @@
                         <p>17 November 2019</p>
                     </div>
                 </div>
+                <div class="border-radius row">
+                   <div class="col-md-8 col-sm-12">
+                       <table class="table border-none">
+                           <tbody>
+                           <tr>
+                               <td colspan="2">
+                                   <p class="h5">James Bound</p>
+                               </td>
+                           </tr>
+                           <tr>
+                               <td>AP97548125</td>
+                               <td>jame_99</td>
+                           </tr>
+                           <tr>
+                               <td>+66258974132</td>
+                               <td>jame@mail.com</td>
+                           </tr>
+                           <tr>
+                               <td></td>
+                               <td>English</td>
+                           </tr>
+                           </tbody>
+                       </table>
+                   </div>
+                    <div class="col-md-4 col-sm-12 border-left text-center">
+                       <a href="" class="border-radius manage-booking">
+                           <img src="{{asset('images/lock.png')}}" alt="">
+                           <span>
+                               จัดการบุคกิ้ง <p>เข้าสู่ระบบทันที</p>
+                           </span>
+                       </a>
+                   </div>
+                </div>
 
             </div>
             <div class="col-lg-4 col-sm-12 p-3 calculate">
