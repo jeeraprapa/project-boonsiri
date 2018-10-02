@@ -364,34 +364,45 @@ ul.list-circle li:before {
     }
 }
 
-#passenger .group-detail .container,#preview .group-detail .container{
+#passenger .group-detail .container,
+#preview .group-detail .container,
+#success .group-detail .container{
     padding: 3rem 2.5rem;
 }
-#passenger .group-detail .container p,#preview .group-detail .container p{
+#passenger .group-detail .container p,
+#success #link-payment p,
+#preview .group-detail .container p{
     font-size: 1.25rem;
     color: rgb(81, 83, 101);;
 }
-#passenger .group-detail header,#preview .group-detail header{
+#passenger .group-detail header,
+#success .group-detail header,
+#preview .group-detail header{
     position: relative;
 }
-#passenger .group-detail header:before,#preview .group-detail header:before{
+#passenger .group-detail header:before,
+#preview .group-detail header:before,
+#success .group-detail header:before{
     display: block;
     content: '';
     border-bottom: solid 1px red;
-    bottom: -1.5rem;
+    bottom: -2rem;
     position: absolute;
     width: 20%;
     z-index: 9;
 }
-#passenger .group-detail header:after,#preview .group-detail header:after{
+#passenger .group-detail header:after,
+#preview .group-detail header:after,
+#success .group-detail header:after{
     display: block;
     content: '';
     border-bottom: solid 1px;
-    bottom: -1.5rem;
+    bottom: -2rem;
     position: absolute;
     width: 100%;
 }
-#passenger .group-detail .form-border-group{
+#passenger .group-detail .form-border-group,
+#success .group-detail .form-border-group{
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
     padding: 0.75rem;
@@ -405,23 +416,30 @@ ul.list-circle li:before {
     top: 50%;
     color: #ccc;
 }
-#passenger .group-detail .form-border-group input,#passenger .group-detail .form-border-group select{
+#passenger .group-detail .form-border-group input,
+#passenger .group-detail .form-border-group select,
+#success .group-detail .form-border-group input,
+#success .group-detail .form-border-group select{
     border: 0;
     padding: 0;
     margin: 0;
 }
 
-#passenger .group-detail .form-border-group .form-control:focus{
+#passenger .group-detail .form-border-group .form-control:focus,
+#success .group-detail .form-border-group .form-control:focus{
     box-shadow: none;
 }
-#passenger .group-detail .form-border-group .form-group{
+#passenger .group-detail .form-border-group .form-group,
+#success .group-detail .form-border-group .form-group{
     margin: 0;
 }
-#passenger .group-detail .form-border-group label{
+#passenger .group-detail .form-border-group label,
+#success .group-detail .form-border-group label{
     font-size: 0.75rem;
 }
 
-#passenger .group-detail .container .credit_card p{
+#passenger #link-payment .credit_card p,
+#success #link-payment .credit_card p{
     font-size: 0.812rem;
 }
 #group-payment .credit_card {
@@ -524,7 +542,7 @@ table.border-none td{
     position: absolute;
     top: 10%;
     right: 0;
-    padding: 1rem;
+    padding: .75rem;
     margin: 1rem 2rem;
 }
 .manage-booking span{
@@ -545,4 +563,19 @@ table.border-none td{
     .border-left{
         border-left: 0 !important;
     }
+}
+
+#success .information .detail{
+    margin-left: 0;
+    margin-right: 0;
+}
+@media (max-width: 768px){
+    #success .information .detail{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.text-default{
+    color: #888da8 !important;
 }
