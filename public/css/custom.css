@@ -196,7 +196,7 @@ span.color-gray{
     }
 }
 
-.calculate table.table thead th,#search .calculate table.table td{
+.calculate table.table thead th,.calculate table.table td{
     border: 0;
 }
 .calculate table.table .danger{
@@ -500,9 +500,49 @@ ul.list-circle li:before {
     font-size: 1rem;
     padding: .5rem 1rem;
     border-radius: 5px;
+    margin-bottom: 2rem;
 }
 @media (max-width: 425px){
     .notification{
         padding: 1rem;
+    }
+}
+
+table.border-none td{
+    border: 0;
+    color: #515365;
+    padding: 1rem 3.5rem 0;
+}
+.border-radius{
+    border: #dee2e6 solid 1px;
+    border-radius: 5px;
+}
+.manage-booking{
+    display: block;
+    width: 80%;
+    max-width: 200px;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    padding: 1rem;
+    margin: 1rem 2rem;
+}
+.manage-booking span{
+    display: inline-block;
+    color: #888da8;
+}
+.manage-booking p{
+    color: #0BA4E0;
+}
+@media (max-width: 768px){
+    table.border-none td{
+        padding: 1rem;
+    }
+    .manage-booking{
+        position: static;
+        margin: 2rem auto;
+    }
+    .border-left{
+        border-left: 0 !important;
     }
 }
